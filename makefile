@@ -1,13 +1,13 @@
 #Makefile
 all: sum-nbo
 
-sum-nbo: main.o
-	g++ -o sum-nbo main.o
+sum-nbo:
+	g++ -o sum-nbo main.cpp
 
-main.o: main.cpp
-	g++ -c -o main.o main.cpp
+#main.o: main.cpp
+	#g++ -c -o main.o main.cpp
 
 clean:
 	rm -f sum-nbo
-	rm -f *.o
+	#rm -f *.o
 
